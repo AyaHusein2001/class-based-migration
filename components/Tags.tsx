@@ -1,14 +1,13 @@
 import React from "react";
 import Tag from "./Tag";
-class Tags extends React.Component {
-  render() {
+const Tags :React.FC<{tags:string}>=({tags})=>{
     return (
       <>
-        {this.props.tags.split(",").map((tag) => (
+        {tags.split(",").map((tag) => (
           <Tag key={tag} text={tag} />
         ))}
       </>
     );
   }
-}
+
 export default Tags;

@@ -1,9 +1,7 @@
 import { Copy, PencilSimple, Trash } from "@phosphor-icons/react";
 import React from "react";
-const { Stack } = require("@mui/material");
-
-class Actions extends React.Component {
-  render() {
+import { Stack } from "@mui/material";
+const Actions = () => {
     return (
       <Stack sx={{paddingX:'0.4rem'}} gap={1}  direction='row'>
         <PencilSimple size={20} />
@@ -12,5 +10,7 @@ class Actions extends React.Component {
       </Stack>
     );
   }
-}
+
 export default Actions;
+
+

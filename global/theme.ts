@@ -37,7 +37,7 @@ const theme = createTheme({
           fontSize: '1.4rem',
           lineHeight: '2rem',
           letterSpacing:0.17,
-          color: '#546E7A'
+          
         }
       }
     }

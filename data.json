@@ -1,0 +1,95 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "kNr": 1007232,
+        "firma": "A. & A. Akbarzadeh-Glattbard Swint Ltd.",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung erteilt"
+      },
+      {
+        "id": 2,
+        "kNr": 1007232,
+        "firma": "Abbraccio AG",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung abgelehnt"
+      },
+      {
+        "id": 3,
+        "kNr": 1007232,
+        "firma": "A&B Commerical Sarl",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung ausstehend"
+      },
+      {
+        "id": 4,
+        "kNr": 1007232,
+        "firma": "Abderhalden Drogerie AG",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung erteilt"
+      },
+      {
+        "id": 5,
+        "kNr": 1007232,
+        "firma": "Achtal Futter AG",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung abgelehnt"
+      },
+      {
+        "id": 6,
+        "kNr": 1007232,
+        "firma": "About Food",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung erteilt"
+      },
+      {
+        "id": 7,
+        "kNr": 1007232,
+        "firma": "AC Consulting SA",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Speiseöl und Speisefette",
+        "status": "Bewilligung ausstehend"
+      },
+      {
+        "id": 8,
+        "kNr": 1007232,
+        "firma": "ACRO CROCE",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung ausstehend"
+      },
+      {
+        "id": 9,
+        "kNr": 1007232,
+        "firma": "Adelfa GmbH",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Speiseöl und Speisefette",
+        "status": "Bewilligung erteilt"
+      },
+      {
+        "id": 10,
+        "kNr": 1007232,
+        "firma": "Aeschlimann Mühle AG",
+        "adresse": "Kramgasse 4, 3000 Bern",
+        "gebNr": "12345678",
+        "tags": "GEB Zucker, Lebensmittel",
+        "status": "Bewilligung abgelehnt"
+      }
+    ]
+  }
+  

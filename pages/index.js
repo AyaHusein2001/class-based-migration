@@ -19,7 +19,7 @@ export default function Home() {
           >
             <Stack sx={{ paddingX: "1.6rem" }}>
               <Typography variant="h1">Organisationen</Typography>
-              <Typography variant="h6">
+              <Typography variant="h6" color={'#546E7A'}>
                 Subhead Optional: Angaben zur Organisation
               </Typography>
             </Stack>

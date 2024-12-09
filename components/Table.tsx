@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import Paper from "@mui/material/Paper";
 import Tags from "./Tags";
 import Actions from "./Actions";
@@ -10,9 +9,9 @@ import {
   FunnelSimple,
   Warning,
 } from "@phosphor-icons/react";
-import { useState, useEffect } from "react";
 import { DataGrid, GridColDef, GridCellParams } from "@mui/x-data-grid";
-
+import { useQuery } from "react-query";
+import handler from "@/pages/_api/organizations";
 const columns: GridColDef[] = [
   { field: "kNr", headerName: "K-Nr.", width: 100 },
   { field: "firma", headerName: "Firma", width: 250 },
@@ -68,37 +67,21 @@ const columns: GridColDef[] = [
 ];
 
 const paginationModel = { page: 0, pageSize: 5 };
-async function getData(url: string) {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-
-    const json = await response.json();
-    return json;
-  } catch (error) {
-    console.error(error);
-  }
-}
 const DataTable = () => {
-  const [rows, setRows] = useState([]);
-  useEffect(() => {
-    const url =
-      "https://api.fakend.fyi/D32useV7yREg7qJdgHda/WErG9kjpwbZepnDxkkxD/organizations";
-    getData(url).then((data) => {
-      console.log(data);
-      setRows(data.payload.data);
-    });
-  }, []);
 
+  const url =
+    "https://api.fakend.fyi/D32useV7yREg7qJdgHda/WErG9kjpwbZepnDxkkxD/organizations";
+  const { data, isLoading } = useQuery("organizations", () => handler(url));
+
+console.log(data)
   return (
     <Paper sx={{ height: "100%", margin: "1.6rem 0", width: "100%" }}>
       <DataGrid
-        rows={rows}
+        rows={data?.payload?.data}
         columns={columns}
         initialState={{ pagination: { paginationModel } }}
         pageSizeOptions={[5, 10]}
+        loading={isLoading}
         checkboxSelection
         sx={{
           border: 0,

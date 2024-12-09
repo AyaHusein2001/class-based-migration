@@ -73,7 +73,6 @@ const DataTable = () => {
     "https://api.fakend.fyi/D32useV7yREg7qJdgHda/WErG9kjpwbZepnDxkkxD/organizations";
   const { data, isLoading } = useQuery("organizations", () => handler(url));
 
-console.log(data)
   return (
     <Paper sx={{ height: "100%", margin: "1.6rem 0", width: "100%" }}>
       <DataGrid
